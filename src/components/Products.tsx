@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Products() {
   const products = [
@@ -85,9 +86,11 @@ export default function Products() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <img 
+                  <Image 
                     src={product.image} 
                     alt={product.title}
+                    width={500}
+                    height={400}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary-600/30 to-transparent"></div>

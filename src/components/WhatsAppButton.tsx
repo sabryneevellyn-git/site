@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WhatsAppButton() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible] = useState(true);
 
   const whatsappUrl = "https://api.whatsapp.com/send/?phone=5521983976690&text=Quer+transformar+sua+presen%C3%A7a+digital%3F+Fale+comigo+e+vamos+construir+juntos+uma+estrat%C3%A9gia+que+gera+resultados%21&type=phone_number&app_absent=0";
 

@@ -106,7 +106,7 @@ export default function ContentPreview() {
                     whileHover={{ scale: 1.02 }}
                   >
                     <p className="text-primary-800 font-semibold italic">
-                      "{preview.highlight}"
+                      &ldquo;{preview.highlight}&rdquo;
                     </p>
                   </motion.div>
                 </div>

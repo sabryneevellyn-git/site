@@ -66,7 +66,7 @@ export default function FAQ() {
             Perguntas Frequentes
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Tire suas dúvidas sobre o ebook "Sah te contou"
+            Tire suas dúvidas sobre o ebook &ldquo;Sah te contou&rdquo;
           </p>
         </motion.div>
         

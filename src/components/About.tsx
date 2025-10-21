@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function About() {
   const containerVariants = {
@@ -101,9 +102,11 @@ export default function About() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <img 
+              <Image 
                 src="/foto1.jpg" 
                 alt="Sabryne Evellyn - Especialista em Marketing Digital"
+                width={384}
+                height={384}
                 className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-600/20 to-transparent"></div>
@@ -114,9 +117,11 @@ export default function About() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <img 
+              <Image 
                 src="/foto2.jpg" 
                 alt="Sabryne Evellyn - Profissional de Marketing Digital"
+                width={384}
+                height={384}
                 className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary-600/20 to-transparent"></div>
