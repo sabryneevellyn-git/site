@@ -66,29 +66,39 @@ export default function WhatsAppButton() {
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
         initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ 
-          delay: 2,
-          duration: 0.5,
-          type: "spring",
-          stiffness: 200
+        animate={{
+          scale: 1,
+          opacity: 1,
+          ...(isMenuOpen ? {} : {
+            y: [0, -5, 0],
+          })
         }}
+        transition={
+          isMenuOpen 
+            ? { 
+                delay: 2,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 200
+              }
+            : {
+                delay: 2,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 200,
+                y: {
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }
+              }
+        }
         whileHover={{ 
           scale: 1.1,
           rotate: 5,
           boxShadow: "0 10px 25px rgba(34, 197, 94, 0.4)"
         }}
         whileTap={{ scale: 0.9 }}
-        animate={isMenuOpen ? {} : {
-          y: [0, -5, 0],
-        }}
-        transition={isMenuOpen ? {} : {
-          y: {
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }
-        }}
       >
         <motion.svg
           className="w-8 h-8 text-white"
