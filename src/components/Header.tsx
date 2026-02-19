@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 export default function Header() {
+  const [logoError, setLogoError] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
@@ -31,12 +32,23 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <motion.a 
             href="#home"
-            className="flex items-baseline gap-1 text-xl md:text-2xl font-bold"
+            className="flex items-center gap-2"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <span className="text-charcoal-600">EVY</span>
-            <span className="text-primary-600">GROWTH</span>
+            {!logoError ? (
+              <img 
+                src="/logo.png" 
+                alt="EVY GROWTH" 
+                className="h-8 w-auto md:h-10 object-contain"
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <span className="flex items-baseline gap-1 text-xl md:text-2xl font-bold">
+                <span className="text-charcoal-600">EVY</span>
+                <span className="text-primary-600">GROWTH</span>
+              </span>
+            )}
           </motion.a>
           
           {/* Desktop Menu */}

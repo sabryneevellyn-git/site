@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const [isVisible] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5521969766763&text=Olá%21+Vi+seu+site+e+quero+saber+mais+a+respeito+de+marketing+digital.&type=phone_number&app_absent=0";
+  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5521983976690&text=Olá%21+Vi+seu+site+e+quero+saber+mais+a+respeito+de+marketing+digital.&type=phone_number&app_absent=0";
   const grupoWhatsappUrl = "https://chat.whatsapp.com/EJed0f2z9VR00J5XEFWOdQ?mode=wwt";
 
   if (!isVisible) return null;

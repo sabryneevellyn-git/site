@@ -109,7 +109,7 @@ export default function FAQ() {
             Ainda tem dúvidas? Entre em contato conosco!
           </p>
           <motion.a
-            href="https://api.whatsapp.com/send/?phone=5521969766763&text=Olá!+Gostaria+de+solicitar+um+orçamento+e+saber+mais+sobre+seus+serviços."
+            href="https://api.whatsapp.com/send/?phone=5521983976690&text=Olá!+Gostaria+de+solicitar+um+orçamento+e+saber+mais+sobre+seus+serviços."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors"
