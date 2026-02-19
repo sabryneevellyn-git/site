@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['var(--font-dm-sans)', 'DM Sans', 'sans-serif'],
       },
       colors: {
         // EVY GROWTH - Paleta elegante: off-white, charcoal, bronze/dourado
