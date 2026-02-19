@@ -38,7 +38,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+    <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-cream-100 via-cream-50 to-primary-50">
       <div className="container mx-auto px-4 text-center">
         <motion.div
           variants={containerVariants}
@@ -54,19 +54,19 @@ export default function Hero() {
           
           <motion.p 
             variants={itemVariants}
-            className="text-xl md:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto"
+            className="text-xl md:text-2xl text-charcoal-500 mb-8 max-w-4xl mx-auto"
           >
-            Transformo <strong>ideias em estratégias criativas</strong> que{' '}
-            <strong>conectam, engajam e inspiram</strong> seu público.
+            Transformamos <strong className="text-charcoal-600">ideias em estratégias criativas</strong> que{' '}
+            <strong className="text-charcoal-600">conectam, engajam e inspiram</strong> seu público.
           </motion.p>
           
           <motion.a 
             href="#contato" 
-            className="inline-block bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-700 hover:to-secondary-700 transition-all shadow-lg hover:shadow-xl"
+            className="inline-block bg-gradient-to-r from-primary-600 to-primary-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-700 hover:to-primary-600 transition-all shadow-lg hover:shadow-xl"
             variants={itemVariants}
             whileHover={{ 
               scale: 1.05,
-              boxShadow: "0 10px 25px rgba(236, 72, 153, 0.4)"
+              boxShadow: "0 10px 25px rgba(130, 110, 87, 0.4)"
             }}
             whileTap={{ scale: 0.95 }}
           >
@@ -77,14 +77,14 @@ export default function Hero() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
             {[
               { number: "50+", label: "Projetos Realizados", color: "text-primary-600" },
-              { number: "3+", label: "Anos de Experiência", color: "text-secondary-600" },
-              { number: "100%", label: "Foco em Resultados", color: "text-accent-600" },
-              { number: "24/7", label: "Suporte Dedicado", color: "text-primary-600" }
+              { number: "3+", label: "Anos de Experiência", color: "text-primary-500" },
+              { number: "100%", label: "Foco em Resultados", color: "text-primary-600" },
+              { number: "24/7", label: "Suporte Dedicado", color: "text-primary-500" }
             ].map((stat, index) => (
               <motion.div 
                 key={index}
                 variants={statsVariants}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                className="bg-cream-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer border border-cream-200"
                 whileHover={{ 
                   y: -8,
                   scale: 1.05,
@@ -113,9 +113,9 @@ export default function Hero() {
                   {stat.number}
                 </motion.div>
                 <motion.div 
-                  className="text-slate-600 font-medium"
+                  className="text-charcoal-500 font-medium"
                   whileHover={{ 
-                    color: "#7c3aed",
+                    color: "#826E57",
                     scale: 1.05
                   }}
                   transition={{ duration: 0.2 }}

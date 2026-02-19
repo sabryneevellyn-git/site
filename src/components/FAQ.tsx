@@ -53,7 +53,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-cream-50">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -62,10 +62,10 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-bold text-slate-800 mb-4">
+          <h2 className="text-3xl font-bold text-charcoal-600 mb-4">
             Perguntas Frequentes
           </h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+          <p className="text-lg text-charcoal-500 max-w-3xl mx-auto">
             Tire suas dúvidas sobre nossos serviços e solicite um orçamento
           </p>
         </motion.div>
@@ -81,16 +81,16 @@ export default function FAQ() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="mb-6 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6 hover:shadow-md transition-shadow duration-300"
+              className="mb-6 bg-gradient-to-r from-primary-50 to-cream-100 rounded-xl p-6 hover:shadow-md transition-shadow duration-300 border border-cream-200"
             >
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center">
+              <h3 className="text-lg font-semibold text-charcoal-600 mb-3 flex items-center">
                 <motion.div 
                   className="w-2 h-2 bg-primary-600 rounded-full mr-3"
                   whileHover={{ scale: 1.5 }}
                 />
                 {faq.question}
               </h3>
-              <p className="text-slate-600 leading-relaxed ml-5">
+              <p className="text-charcoal-500 leading-relaxed ml-5">
                 {faq.answer}
               </p>
             </motion.div>
@@ -105,7 +105,7 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-lg text-slate-600 mb-6">
+          <p className="text-lg text-charcoal-500 mb-6">
             Ainda tem dúvidas? Entre em contato conosco!
           </p>
           <motion.a

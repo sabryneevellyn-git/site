@@ -4,16 +4,16 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+    <section id="contato" className="py-20 bg-gradient-to-br from-cream-100 to-primary-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-slate-800 mb-6">
+            <h2 className="text-4xl font-bold text-charcoal-600 mb-6">
               Entre na Nossa Lista VIP Gratuitamente!
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Cadastre-se e receba <strong className="text-slate-800">dicas, estratégias e conteúdos exclusivos</strong> sobre{' '}
-              <strong className="text-slate-800">Marketing Digital</strong> direto no seu e-mail.
+            <p className="text-lg text-charcoal-500 leading-relaxed mb-6">
+              Cadastre-se e receba               <strong className="text-charcoal-600">dicas, estratégias e conteúdos exclusivos</strong> sobre{' '}
+              <strong className="text-charcoal-600">Marketing Digital</strong> direto no seu e-mail.
             </p>
             
             {/* Botão do Grupo WhatsApp */}
@@ -40,11 +40,11 @@ export default function Contact() {
                 </svg>
                 <span>Ou entre no nosso grupo do WhatsApp</span>
               </motion.a>
-              <p className="text-sm text-slate-500 mt-2">Receba dicas exclusivas e conteúdos em tempo real</p>
+              <p className="text-sm text-charcoal-400 mt-2">Receba dicas exclusivas e conteúdos em tempo real</p>
             </motion.div>
           </div>
           
-          <div className="bg-white p-8 rounded-xl shadow-md">
+          <div className="bg-cream-50 p-8 rounded-xl shadow-md border border-cream-200">
             <div className="w-full" style={{ minHeight: '824px' }}>
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSc3Xl3tILDmxhPD2RFvGxaRYK6Hk9MtdDDuCvXDadIi-J2__Q/viewform?embedded=true"

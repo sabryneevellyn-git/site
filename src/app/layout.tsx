@@ -5,23 +5,22 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sabryne Evellyn - Marketing Digital em Campos dos Goytacazes | Consultoria e Estratégias',
-  description: 'Marketing Digital em Campos dos Goytacazes. Transformo ideias em estratégias criativas que conectam, engajam e inspiram seu público. Consultoria, gestão de redes sociais e campanhas de lançamento.',
+  title: 'EVY GROWTH - Assessoria em Marketing Digital Estratégico',
+  description: 'Assessoria em marketing digital estratégico. Transformamos ideias em estratégias criativas que conectam, engajam e inspiram seu público. Consultoria, gestão de redes sociais e campanhas de lançamento.',
   keywords: [
-    'marketing digital campos dos goytacazes',
-    'marketing digital Campos dos Goytacazes',
-    'consultoria marketing digital Campos dos Goytacazes',
-    'gestão redes sociais Campos dos Goytacazes',
-    'agência marketing digital Campos dos Goytacazes',
-    'estratégias digitais Campos dos Goytacazes',
-    'campanhas marketing digital Campos dos Goytacazes',
-    'Sabryne Evellyn marketing digital',
+    'marketing digital estratégico',
+    'assessoria marketing digital',
+    'consultoria marketing digital',
+    'gestão redes sociais',
+    'estratégias digitais',
+    'campanhas marketing digital',
+    'EVY GROWTH',
     'marketing digital RJ',
     'marketing digital Rio de Janeiro'
   ],
-  authors: [{ name: 'Sabryne Evellyn' }],
-  creator: 'Sabryne Evellyn',
-  publisher: 'Sabryne Evellyn',
+  authors: [{ name: 'EVY GROWTH' }],
+  creator: 'EVY GROWTH',
+  publisher: 'EVY GROWTH',
   robots: {
     index: true,
     follow: true,
@@ -36,18 +35,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://sabryneevellyn.com.br',
-    title: 'Sabryne Evellyn - Marketing Digital em Campos dos Goytacazes',
-    description: 'Marketing Digital em Campos dos Goytacazes. Consultoria, estratégias criativas e gestão de redes sociais.',
-    siteName: 'Sabryne Evellyn - Marketing Digital',
+    url: 'https://evygrowth.com.br',
+    title: 'EVY GROWTH - Assessoria em Marketing Digital Estratégico',
+    description: 'Assessoria em marketing digital estratégico. Consultoria, estratégias criativas e gestão de redes sociais.',
+    siteName: 'EVY GROWTH - Marketing Digital Estratégico',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sabryne Evellyn - Marketing Digital em Campos dos Goytacazes',
-    description: 'Marketing Digital em Campos dos Goytacazes. Transformo ideias em estratégias criativas.',
+    title: 'EVY GROWTH - Assessoria em Marketing Digital Estratégico',
+    description: 'Assessoria em marketing digital estratégico. Transformamos ideias em estratégias criativas.',
   },
   alternates: {
-    canonical: 'https://sabryneevellyn.com.br',
+    canonical: 'https://evygrowth.com.br',
   },
 }
 

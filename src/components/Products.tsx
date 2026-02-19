@@ -48,7 +48,7 @@ export default function Products() {
   };
 
   return (
-    <section id="produtos" className="py-20 bg-gradient-to-br from-accent-50 to-primary-50">
+    <section id="produtos" className="py-20 bg-gradient-to-br from-primary-50 to-cream-100">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -57,10 +57,10 @@ export default function Products() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-4xl font-bold text-charcoal-600 mb-4">
             Meus Produtos Digitais
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal-500 max-w-3xl mx-auto">
             Conhecimento estratégico para transformar seu negócio digital
           </p>
         </motion.div>
@@ -76,7 +76,7 @@ export default function Products() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+              className="bg-cream-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-cream-200"
               whileHover={{ y: -5 }}
             >
               <div className="grid md:grid-cols-2 gap-0">
@@ -102,7 +102,7 @@ export default function Products() {
                 {/* Conteúdo do produto */}
                 <div className="p-8">
                   <motion.h3 
-                    className="text-2xl font-bold text-slate-800 mb-2"
+                    className="text-2xl font-bold text-charcoal-600 mb-2"
                     initial={{ x: -20, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: true }}
@@ -122,7 +122,7 @@ export default function Products() {
                   </motion.p>
                   
                   <motion.p 
-                    className="text-slate-600 mb-6 leading-relaxed"
+                    className="text-charcoal-500 mb-6 leading-relaxed"
                     initial={{ x: -20, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: true }}
@@ -138,12 +138,12 @@ export default function Products() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.5 }}
                   >
-                    <h4 className="font-semibold text-slate-800 mb-3">O que você vai aprender:</h4>
+                    <h4 className="font-semibold text-charcoal-600 mb-3">O que você vai aprender:</h4>
                     <div className="grid grid-cols-1 gap-2">
                       {product.features.map((feature, featureIndex) => (
                         <motion.div 
                           key={featureIndex}
-                          className="flex items-center text-slate-600"
+                          className="flex items-center text-charcoal-500"
                           initial={{ x: -20, opacity: 0 }}
                           whileInView={{ x: 0, opacity: 1 }}
                           viewport={{ once: true }}
@@ -170,10 +170,10 @@ export default function Products() {
                       href={product.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-4 rounded-lg font-semibold text-center hover:from-primary-700 hover:to-secondary-700 transition-all shadow-md hover:shadow-lg"
+                      className="flex-1 bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-4 rounded-lg font-semibold text-center hover:from-primary-700 hover:to-primary-600 transition-all shadow-md hover:shadow-lg"
                       whileHover={{ 
                         scale: 1.02,
-                        boxShadow: "0 10px 25px rgba(236, 72, 153, 0.4)"
+                        boxShadow: "0 10px 25px rgba(130, 110, 87, 0.4)"
                       }}
                       whileTap={{ scale: 0.98 }}
                     >
@@ -181,7 +181,7 @@ export default function Products() {
                     </motion.a>
                     
                     <motion.div 
-                      className="text-center sm:text-right text-slate-500 text-sm"
+                      className="text-center sm:text-right text-charcoal-400 text-sm"
                       whileHover={{ scale: 1.05 }}
                     >
                       {product.price}

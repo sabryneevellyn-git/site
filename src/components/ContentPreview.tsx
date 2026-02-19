@@ -53,7 +53,7 @@ export default function ContentPreview() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+    <section className="py-20 bg-gradient-to-br from-cream-100 to-primary-50">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -62,10 +62,10 @@ export default function ContentPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-4xl font-bold text-charcoal-600 mb-4">
             Preview do Conteúdo
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal-500 max-w-3xl mx-auto">
             Uma prévia dos conceitos que você vai dominar no ebook
           </p>
         </motion.div>
@@ -81,7 +81,7 @@ export default function ContentPreview() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="bg-white rounded-xl p-8 mb-6 shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-cream-50 rounded-xl p-8 mb-6 shadow-md hover:shadow-lg transition-shadow duration-300 border border-cream-200"
               whileHover={{ x: 10 }}
             >
               <div className="flex flex-col md:flex-row gap-6 items-start">
@@ -95,14 +95,14 @@ export default function ContentPreview() {
                 </motion.div>
                 
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-slate-800 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal-600 mb-3">
                     {preview.title}
                   </h3>
-                  <p className="text-slate-600 mb-4 leading-relaxed">
+                  <p className="text-charcoal-500 mb-4 leading-relaxed">
                     {preview.preview}
                   </p>
                   <motion.div 
-                    className="bg-gradient-to-r from-primary-100 to-secondary-100 p-4 rounded-lg border-l-4 border-primary-600"
+                    className="bg-gradient-to-r from-primary-100 to-primary-50 p-4 rounded-lg border-l-4 border-primary-600"
                     whileHover={{ scale: 1.02 }}
                   >
                     <p className="text-primary-800 font-semibold italic">
@@ -123,7 +123,7 @@ export default function ContentPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-lg text-slate-600 mb-6">
+          <p className="text-lg text-charcoal-500 mb-6">
             Quer descobrir todos os segredos? Adquira o ebook completo!
           </p>
           <motion.a
@@ -133,7 +133,7 @@ export default function ContentPreview() {
             className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
             whileHover={{ 
               scale: 1.05,
-              boxShadow: "0 10px 25px rgba(236, 72, 153, 0.3)"
+              boxShadow: "0 10px 25px rgba(130, 110, 87, 0.3)"
             }}
             whileTap={{ scale: 0.95 }}
           >

@@ -58,8 +58,8 @@ export default function MagicSparkles() {
             ease: "linear"
           }}
         >
-          <div className="w-4 h-4 bg-gradient-to-r from-yellow-300 to-pink-300 rounded-full shadow-lg">
-            <div className="w-full h-full bg-gradient-to-r from-yellow-200 to-pink-200 rounded-full animate-pulse"></div>
+          <div className="w-4 h-4 bg-gradient-to-r from-primary-400 to-primary-500 rounded-full shadow-lg">
+            <div className="w-full h-full bg-gradient-to-r from-primary-300 to-primary-400 rounded-full animate-pulse"></div>
           </div>
         </motion.div>
       ))}

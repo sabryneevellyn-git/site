@@ -5,15 +5,15 @@ import { motion } from 'framer-motion';
 export default function Testimonials() {
   const testimonials = [
     {
-      text: "A Sabryne transformou completamente minha estratégia digital. Em 3 meses aumentei minhas vendas em 200%!",
+      text: "A EVY GROWTH transformou completamente minha estratégia digital. Em 3 meses aumentei minhas vendas em 200%!",
       author: "Maria Silva"
     },
     {
-      text: "As estratégias da Sabryne são únicas e realmente funcionam. Minha marca nunca foi tão forte!",
+      text: "As estratégias da EVY GROWTH são únicas e realmente funcionam. Minha marca nunca foi tão forte!",
       author: "João Santos"
     },
     {
-      text: "Profissional excepcional! A Sabryne entende de verdade o que é marketing digital.",
+      text: "Profissionais excepcionais! A EVY GROWTH entende de verdade o que é marketing digital.",
       author: "Ana Costa"
     }
   ];
@@ -42,10 +42,10 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-cream-50">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-4xl font-bold text-slate-800 text-center mb-16"
+          className="text-4xl font-bold text-charcoal-600 text-center mb-16"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -65,7 +65,7 @@ export default function Testimonials() {
             <motion.div 
               key={index} 
               variants={itemVariants}
-              className="bg-gradient-to-br from-primary-50 to-secondary-50 p-8 rounded-xl border-l-4 border-primary-600"
+              className="bg-gradient-to-br from-primary-50 to-cream-100 p-8 rounded-xl border-l-4 border-primary-600 border border-cream-200"
               whileHover={{ 
                 y: -5,
                 scale: 1.02,
@@ -77,7 +77,7 @@ export default function Testimonials() {
                 {[...Array(5)].map((_, i) => (
                   <motion.svg
                     key={i}
-                    className="w-5 h-5 text-yellow-400"
+                    className="w-5 h-5 text-primary-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     initial={{ opacity: 0, scale: 0 }}
@@ -91,7 +91,7 @@ export default function Testimonials() {
               </div>
 
               <motion.p 
-                className="text-slate-600 italic mb-6 leading-relaxed"
+                className="text-charcoal-500 italic mb-6 leading-relaxed"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -100,7 +100,7 @@ export default function Testimonials() {
                 &ldquo;{testimonial.text}&rdquo;
               </motion.p>
               <motion.div 
-                className="font-semibold text-slate-800"
+                className="font-semibold text-charcoal-600"
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}

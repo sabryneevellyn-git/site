@@ -39,7 +39,7 @@ export default function About() {
   };
 
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-20 bg-cream-50">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -50,39 +50,39 @@ export default function About() {
           >
             <motion.h2 
               variants={itemVariants}
-              className="text-4xl font-bold text-slate-800 mb-6"
+              className="text-4xl font-bold text-charcoal-600 mb-6"
             >
-              Quem é Sabryne Evellyn?
+              Quem é a EVY GROWTH?
             </motion.h2>
             
             <motion.div 
               variants={itemVariants}
-              className="space-y-4 text-lg text-slate-600 leading-relaxed"
+              className="space-y-4 text-lg text-charcoal-500 leading-relaxed"
             >
               <p>
-                Especialista em <strong className="text-slate-800">Marketing Digital em Campos dos Goytacazes</strong> com mais de 3 anos de experiência, 
-                Sabryne dedica-se a transformar ideias em estratégias criativas que realmente funcionam.
+                Especialistas em <strong className="text-charcoal-600">Marketing Digital Estratégico</strong> com mais de 3 anos de experiência, 
+                a EVY GROWTH dedica-se a transformar ideias em estratégias criativas que realmente funcionam.
               </p>
               
               <p>
-                Sua missão é ajudar empresários e empresárias de <strong className="text-slate-800">Campos dos Goytacazes e região</strong> a construir marcas fortes e 
+                Nossa missão é ajudar empresários e empresárias a construir marcas fortes e 
                 negócios lucrativos através de estratégias digitais inovadoras e processos 
-                exclusivos desenvolvidos ao longo de sua carreira.
+                exclusivos desenvolvidos ao longo da nossa trajetória.
               </p>
               
               <p>
-                <strong className="text-slate-800">Criadora de métodos únicos</strong> de engajamento e conversão, 
-                Sabryne está pronta para te ajudar a destravar todo o potencial do seu negócio digital.
+                <strong className="text-charcoal-600">Criadores de métodos únicos</strong> de engajamento e conversão, 
+                estamos prontos para te ajudar a destravar todo o potencial do seu negócio digital.
               </p>
             </motion.div>
             
             <motion.a 
               href="#contato" 
-              className="inline-block bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-700 hover:to-secondary-700 transition-all shadow-lg hover:shadow-xl mt-6"
+              className="inline-block bg-gradient-to-r from-primary-600 to-primary-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-primary-700 hover:to-primary-600 transition-all shadow-lg hover:shadow-xl mt-6"
               variants={itemVariants}
               whileHover={{ 
                 scale: 1.05,
-                boxShadow: "0 10px 25px rgba(236, 72, 153, 0.4)"
+                boxShadow: "0 10px 25px rgba(130, 110, 87, 0.4)"
               }}
               whileTap={{ scale: 0.95 }}
             >
@@ -104,12 +104,12 @@ export default function About() {
             >
               <Image 
                 src="/foto1.jpg" 
-                alt="Sabryne Evellyn - Especialista em Marketing Digital"
+                alt="EVY GROWTH - Assessoria em Marketing Digital Estratégico"
                 width={384}
                 height={384}
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-600/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary-600/30 to-transparent"></div>
             </motion.div>
             
             <motion.div 
@@ -119,12 +119,12 @@ export default function About() {
             >
               <Image 
                 src="/foto2.jpg" 
-                alt="Sabryne Evellyn - Profissional de Marketing Digital"
+                alt="EVY GROWTH - Profissional de Marketing Digital"
                 width={384}
                 height={384}
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary-600/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary-500/30 to-transparent"></div>
             </motion.div>
           </motion.div>
         </div>

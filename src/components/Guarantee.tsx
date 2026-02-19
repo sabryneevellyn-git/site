@@ -49,7 +49,7 @@ export default function Guarantee() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary-50 to-accent-50">
+    <section className="py-20 bg-gradient-to-br from-cream-100 to-primary-50">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -58,10 +58,10 @@ export default function Guarantee() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-4xl font-bold text-charcoal-600 mb-4">
             Sua Tranquilidade é Nossa Prioridade
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal-500 max-w-3xl mx-auto">
             Comprometimento total com sua satisfação e sucesso
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ export default function Guarantee() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 text-center"
+              className="bg-cream-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-cream-200"
               whileHover={{ 
                 y: -5,
                 scale: 1.02
@@ -90,10 +90,10 @@ export default function Guarantee() {
               >
                 {guarantee.icon}
               </motion.div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">
+              <h3 className="text-lg font-semibold text-charcoal-600 mb-3">
                 {guarantee.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-charcoal-500 leading-relaxed">
                 {guarantee.description}
               </p>
             </motion.div>
@@ -102,7 +102,7 @@ export default function Guarantee() {
 
         {/* Stats de confiança */}
         <motion.div 
-          className="mt-16 bg-white rounded-2xl p-8 shadow-lg"
+          className="mt-16 bg-cream-50 rounded-2xl p-8 shadow-lg border border-cream-200"
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -116,7 +116,7 @@ export default function Guarantee() {
               transition={{ delay: 0.2, duration: 0.5, type: "spring" }}
             >
               <div className="text-3xl font-bold text-primary-600 mb-2">100%</div>
-              <div className="text-slate-600">Garantia de Satisfação</div>
+              <div className="text-charcoal-500">Garantia de Satisfação</div>
             </motion.div>
             <motion.div
               initial={{ scale: 0 }}
@@ -124,8 +124,8 @@ export default function Guarantee() {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5, type: "spring" }}
             >
-              <div className="text-3xl font-bold text-secondary-600 mb-2">24h</div>
-              <div className="text-slate-600">Suporte Disponível</div>
+              <div className="text-3xl font-bold text-primary-500 mb-2">24h</div>
+              <div className="text-charcoal-500">Suporte Disponível</div>
             </motion.div>
             <motion.div
               initial={{ scale: 0 }}
@@ -133,8 +133,8 @@ export default function Guarantee() {
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 0.5, type: "spring" }}
             >
-              <div className="text-3xl font-bold text-accent-600 mb-2">1000+</div>
-              <div className="text-slate-600">Leitores Satisfeitos</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">1000+</div>
+              <div className="text-charcoal-500">Leitores Satisfeitos</div>
             </motion.div>
           </div>
         </motion.div>

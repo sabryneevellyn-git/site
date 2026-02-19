@@ -20,7 +20,7 @@ export default function ParticleEffects() {
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
         size: Math.random() * 4 + 2,
-        color: ['#ec4899', '#f472b6', '#fb7185', '#a855f7', '#c084fc'][Math.floor(Math.random() * 5)],
+        color: ['#826E57', '#A08C75', '#B5A48F', '#6B5A47', '#C9B8A3'][Math.floor(Math.random() * 5)],
         duration: Math.random() * 3 + 2
       };
       

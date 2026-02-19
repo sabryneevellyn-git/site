@@ -7,7 +7,7 @@ export default function BackgroundWaves() {
     <div className="fixed inset-0 pointer-events-none z-0">
       {/* Ondas de fundo */}
       <motion.div
-        className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary-100 to-transparent opacity-30"
+        className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary-200 to-transparent opacity-30"
         animate={{
           scaleX: [1, 1.1, 1],
           opacity: [0.3, 0.5, 0.3]
@@ -20,7 +20,7 @@ export default function BackgroundWaves() {
       />
       
       <motion.div
-        className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-secondary-100 to-transparent opacity-20"
+        className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-primary-100 to-transparent opacity-20"
         animate={{
           scaleX: [1.1, 1, 1.1],
           opacity: [0.2, 0.4, 0.2]
@@ -35,7 +35,7 @@ export default function BackgroundWaves() {
 
       {/* Brilhos flutuantes */}
       <motion.div
-        className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-radial from-primary-200 to-transparent rounded-full opacity-20"
+        className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-radial from-primary-300 to-transparent rounded-full opacity-20"
         animate={{
           scale: [1, 1.5, 1],
           rotate: [0, 180, 360],
@@ -49,7 +49,7 @@ export default function BackgroundWaves() {
       />
 
       <motion.div
-        className="absolute top-3/4 right-1/4 w-24 h-24 bg-gradient-radial from-secondary-200 to-transparent rounded-full opacity-15"
+        className="absolute top-3/4 right-1/4 w-24 h-24 bg-gradient-radial from-primary-200 to-transparent rounded-full opacity-15"
         animate={{
           scale: [1.5, 1, 1.5],
           rotate: [360, 180, 0],
@@ -65,7 +65,7 @@ export default function BackgroundWaves() {
 
       {/* Linhas de energia */}
       <motion.div
-        className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary-300 to-transparent"
+        className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary-400 to-transparent"
         animate={{
           opacity: [0, 1, 0],
           scaleX: [0, 1, 0]
@@ -78,7 +78,7 @@ export default function BackgroundWaves() {
       />
 
       <motion.div
-        className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary-300 to-transparent"
+        className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary-300 to-transparent"
         animate={{
           opacity: [0, 1, 0],
           scaleX: [0, 1, 0]

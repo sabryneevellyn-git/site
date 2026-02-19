@@ -89,7 +89,7 @@ export default function Services() {
   };
 
   return (
-    <section id="servicos" className="py-20 bg-gradient-to-br from-secondary-50 to-accent-50">
+    <section id="servicos" className="py-20 bg-gradient-to-br from-cream-100 to-primary-50">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -98,10 +98,10 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-4xl font-bold text-charcoal-600 mb-4">
             Sua Jornada no Marketing Digital
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal-500 max-w-3xl mx-auto">
             Mais importante que saber onde estamos é para onde queremos ir.
           </p>
         </motion.div>
@@ -117,7 +117,7 @@ export default function Services() {
             <motion.div 
               key={index} 
               variants={itemVariants}
-              className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100"
+              className="bg-cream-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-cream-200"
               whileHover={{ 
                 y: -10,
                 scale: 1.02,
@@ -141,20 +141,20 @@ export default function Services() {
                 </motion.div>
               </div>
               
-              <h3 className="text-xl font-semibold text-slate-800 mb-4">
+              <h3 className="text-xl font-semibold text-charcoal-600 mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <p className="text-charcoal-500 mb-6 leading-relaxed">
                 {service.description}
               </p>
               
               <motion.a 
                 href="#contato" 
-                className="inline-block bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-3 rounded-lg font-medium hover:from-primary-700 hover:to-secondary-700 transition-all shadow-md hover:shadow-lg"
+                className="inline-block bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-lg font-medium hover:from-primary-700 hover:to-primary-600 transition-all shadow-md hover:shadow-lg"
                 whileHover={{ 
                   scale: 1.05,
-                  boxShadow: "0 8px 20px rgba(236, 72, 153, 0.4)"
+                  boxShadow: "0 8px 20px rgba(130, 110, 87, 0.4)"
                 }}
                 whileTap={{ scale: 0.95 }}
               >

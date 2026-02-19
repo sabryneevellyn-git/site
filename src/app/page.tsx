@@ -21,7 +21,7 @@ import MagicSparkles from '@/components/MagicSparkles';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white relative overflow-hidden">
+    <main className="min-h-screen bg-cream-100 relative overflow-hidden">
       {/* Efeitos de fundo */}
       <BackgroundWaves />
       <ParticleEffects />
